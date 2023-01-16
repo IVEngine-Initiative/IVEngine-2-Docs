@@ -1,8 +1,8 @@
 ﻿//========= Copyright Glitch Software, All rights reserved. ============//
 //
-// Purpose: The default sample weapon for Ivengine 2™️!
-// Purpose 2: This is meant as an example weapon of what you can do with weapons and more!
-// Purpose 3: Written by glitchy! Will be updated...
+// Purpose: The default sample weapon for IVEngine 2!
+// This is meant as an example weapon of what you can do with weapons.
+//
 //
 //=============================================================================//
 
@@ -14,7 +14,7 @@
 #include "player.h"
 #include "game.h"
 #include "in_buttons.h"
-#include "grenade_ar2.h" //  Dont be fooled by the name, it is a beta leftover but it is still used for the SMG1 Grenade
+#include "grenade_ar2.h" // grenade_ar2 is the internal name for smg1 grenade.
 #include "ai_memory.h"
 #include "soundent.h"
 #include "rumble_shared.h"
@@ -37,8 +37,8 @@ public:
 	DECLARE_SERVERCLASS();
 	
 	void	Precache( void );
-	void	AddViewKick( void );
-	void	SecondaryAttack( void );
+	void	AddViewKick( void ); // Used for viewkick effects.
+	void	SecondaryAttack( void ); // Used for the grenade launcher.
 
 	int		GetMinBurst() { return 2; } // If you can get burst fire working, this is the ABSOLUTE minimum the burst will fire
 	int		GetMaxBurst() { return 5; } // If you can get burst fire working, this is the ABSOLUTE maxinum the burst will fire
